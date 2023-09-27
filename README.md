@@ -107,3 +107,16 @@ Les différences entre les scripts http-dev et http-prod dans le projet sont gé
         <li>http://localhost:8000/dont-exist - code 404 (NOT FOUND)</li>
     </ul>
 </code></pre>
+
+<h2>Partie 2 : framework Express</h2>
+
+<h3>Question 2.1 donner les URL des documentations de chacun des modules installés par la commande précédente.</h3>
+<pre><code>
+    Cliquer sur les noms pour accéder aux liens:
+    <ol>
+        <li><a href="https://expressjs.com/en/5x/api.html">Express.js</a></li>
+        <li><a href="https://www.npmjs.com/package/http-errors">http-errors</a></li>
+        <li><a href="https://www.npmjs.com/package/loglevel">loglevel</a></li>
+        <li><a href="https://www.npmjs.com/package/morgan">morgan</a></li>
+     </ol>
+</code></pre>
