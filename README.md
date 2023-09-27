@@ -120,3 +120,9 @@ Les différences entre les scripts http-dev et http-prod dans le projet sont gé
         <li><a href="https://www.npmjs.com/package/morgan">morgan</a></li>
      </ol>
 </code></pre>
+
+<h3>Question 2.2 vérifier que les trois routes fonctionnent.</h3>
+<pre><code>
+    <p><B>Route "/" et "/index.html"</B> -> affiche le contenu de index.html.</p>
+    <p><B>Route "/random/:nb"</B> ->  Extrait la valeur du paramètre nb de la requête, génère un nombre spécifié de balises li contenant des nombres aléatoires, puis renvoie ces balises dans une liste non ordonnée HTML.</p>
+</code></pre>
