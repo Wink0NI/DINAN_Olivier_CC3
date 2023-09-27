@@ -165,3 +165,8 @@ Les différences entre les scripts http-dev et http-prod dans le projet sont gé
     <p>Lorsqu'on rafraîchit la page (Ctrl+R) sans forcer le rafraîchissement, le navigateur utilise la mise en cache pour récupérer les ressources statiques. Le code HTTP pour "style.css" sera "304 Not Modified" si le fichier n'a pas été modifié depuis la dernière visite.</p>
     <p>Lorsqu'on force le rafraîchissement (Ctrl+Shift+R), le navigateur ignore le cache client et envoie une nouvelle requête pour toutes les ressources. Le code HTTP pour "style.css" sera "200 OK" si le fichier est trouvé et transmis avec succès depuis le serveur.</p>
 </code></pre>
+
+<h3>Question 2.7 vérifier que l'affichage change bien entre le mode production et le mode developpement.</h3>
+<pre><code>
+    <p>NOTA BENE: Le mode développement affiche les erreurs sur le site d'erreur tandis que le mode production ne les affiche pas pour éviter toutes failles de sécurité.</p>
+</code></pre>
