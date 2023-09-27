@@ -76,3 +76,24 @@
 <pre><code>
     Ces commandes ont ajouté deux packages dans le projet, l'un pour pouvoir démarrer le projet en mode production (cross-env) et l'autre pour pouvoir démarrer le projet en mode développement (nodemon) et a également rajouté le dossier node_modules dans le dossier DINAN_Olivier_CC3.
 </code></pre>
+
+<h3>Question 1.7 quelles sont les différences entre les scripts http-dev et http-prod ?</h3>
+<pre><code>
+Les différences entre les scripts http-dev et http-prod dans le projet sont généralement:
+
+<B>Le mode d'environnement (NODE_ENV):</B>
+    http-dev : Ce script est généralement destiné à l'environnement de développement. Il peut définir la variable d'environnement NODE_ENV sur "development" pour indiquer que l'application s'exécute en mode de développement.
+    http-prod : Ce script est généralement destiné à l'environnement de production. Il peut définir la variable d'environnement NODE_ENV sur "production" pour indiquer que l'application s'exécute en mode de production. 
+
+<B>L'option du démarrage automatique (nodemon) :</B>
+    http-dev : Il est courant d'utiliser un outil comme nodemon pour le redémarrage automatique du serveur en mode de développement. Le script http-dev utilise nodemon pour surveiller les fichiers du projet et redémarrer le serveur chaque fois qu'une modification est détectée.
+    http-prod : En mode de production, le redémarrage automatique du serveur n'est généralement pas souhaitable. Par conséquent, le script http-prod peut ne pas utiliser nodemon ou tout autre outil de redémarrage automatique.
+
+<B>Les options de lancement du serveur :</B>
+    http-dev : En mode de développement, il est possible d'activer des options spécifiques pour faciliter le débogage, telles que l'affichage de messages de journalisation détaillés ou l'activation de fonctionnalités de développement spécifiques.
+    http-prod : En mode production, certaines options de débogage ou de développement peuvent être désactivées pour des raisons de sécurité ou de performances.
+
+<B>La gestion des erreurs :</B>
+    http-dev : En mode développement, il est possible de configurer le serveur pour afficher des messages d'erreur détaillés afin de faciliter le débogage en cas d'erreur.
+    http-prod : En mode production, les messages d'erreur peuvent être configurés pour être plus génériques ou limités afin de ne pas exposer d'informations sensibles.
+</code></pre>
