@@ -6,9 +6,7 @@ const port = 8000;
 
 const app = express();
 
-app.get(["/", "/index.html"], async function (request, response, next) {
-    response.sendFile("index.html", { root: "./" });
-});
+app.use(express.static("static"));
 
 app.get("/random/:nb", async function (request, response, next) {
     const length = request.params.nb;

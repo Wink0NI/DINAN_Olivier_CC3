@@ -153,3 +153,9 @@ Les différences entre les scripts http-dev et http-prod dans le projet sont gé
 <pre><code>
     <p>L'événement listening est déclenché lorsque le serveur Express commence à écouter sur le port spécifié et est prêt à recevoir des requêtes. <code>console.info(`File ${import.meta.url} executed.`);</code> sera éxécuté avant l'événement listening.</p>
 </code></pre>
+
+<h3>Question 2.5 indiquer quelle est l'option (activée par défaut) qui redirige / vers /index.html ?</h3>
+<pre><code>
+    <p>L'option qui redirige automatiquement la racine "/" vers "/index.html" est l'option index, qui est activée par défaut dans le middleware express.static.</p>
+    <p> Express cherchera automatiquement et servira un fichier appelé "index.html" s'il existe dans le répertoire le répertoire "static".</p>
+</code></pre>
