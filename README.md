@@ -37,3 +37,8 @@
         <B>Content-Length: 20 :</B>Un nouvel en-tête indiquant la longueur du contenu de la réponse en octets.
         <B>Content-Type: application/json :</B>Un en-tête qui spécifie que le type de contenu de la réponse est au format JSON.
 </code></pre>
+
+<h3>Question 1.3 que contient la réponse reçue par le client ?</h3>
+<pre><code>
+     La réponse reçue par le client contient le contenu du fichier "index.html" (avec réponse HTTP 200) si la lecture du fichier réussit. Si la lecture du fichier échoue pour une raison quelconque, une erreur est affichée dans la console, mais aucune réponse n'est envoyée au client.
+</code></pre>
