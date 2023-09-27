@@ -42,3 +42,15 @@
 <pre><code>
      La réponse reçue par le client contient le contenu du fichier "index.html" (avec réponse HTTP 200) si la lecture du fichier réussit. Si la lecture du fichier échoue pour une raison quelconque, une erreur est affichée dans la console, mais aucune réponse n'est envoyée au client.
 </code></pre>
+
+<h3>Question 1.4 quelle est l'erreur affichée dans la console ? Retrouver sur https://nodejs.org/api le code d'erreur affiché.</h3>
+<pre><code>
+    [Error: ENOENT: no such file or directory, open 'C:\Users\Utilisateur\Downloads\CC1 dev web\DINAN_Olivier_CC3\index.html'] {
+    errno: -4058,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: 'C:\\Users\\Utilisateur\\Downloads\\CC1 dev web\\DINAN_Olivier_CC3\\index.html'
+    }
+    ENOENT (No such file or directory): Commonly raised by fs operations to indicate that a component of the specified pathname does not exist. No entity (file or directory) could be found by the given path.
+    Cela veut dire que dans cette situation, le fichier index.html est introuvable dans le dossier DINAN_Olivier_CC3.
+</code></pre>
