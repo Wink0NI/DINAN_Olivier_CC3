@@ -97,3 +97,13 @@ Les différences entre les scripts http-dev et http-prod dans le projet sont gé
     http-dev : En mode développement, il est possible de configurer le serveur pour afficher des messages d'erreur détaillés afin de faciliter le débogage en cas d'erreur.
     http-prod : En mode production, les messages d'erreur peuvent être configurés pour être plus génériques ou limités afin de ne pas exposer d'informations sensibles.
 </code></pre>
+
+<h3>Question 1.8 donner les codes HTTP reçus par votre navigateur pour chacune des quatre pages précédentes.</h3>
+<pre><code>
+    <ul>
+        <li>http://localhost:8000/index.html - code 200 (OK)</li>
+        <li>http://localhost:8000/random.html - code 200 (OK)</li>
+        <li>http://localhost:8000/ - code 404 (NOT FOUND)</li>
+        <li>http://localhost:8000/dont-exist - code 404 (NOT FOUND)</li>
+    </ul>
+</code></pre>
