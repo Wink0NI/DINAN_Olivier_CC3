@@ -54,3 +54,20 @@
     ENOENT (No such file or directory): Commonly raised by fs operations to indicate that a component of the specified pathname does not exist. No entity (file or directory) could be found by the given path.
     Cela veut dire que dans cette situation, le fichier index.html est introuvable dans le dossier DINAN_Olivier_CC3.
 </code></pre>
+
+<h3>Question 1.5 donner le code de requestListener() modifié avec gestion d'erreur en async/await.</h3>
+<pre><code>
+    async function requestListener(_request, response) {
+        try {
+            const contents = await fs.readFile("index.html", "utf8");
+            response.setHeader("Content-Type", "text/html");
+            response.writeHead(200);
+            response.end(contents);
+        } catch (error) {
+            console.error(error);
+            response.writeHead(500);
+            return response.end(`(<)html>(<)p>500: INTERNAL SERVER ERROR(<)/p>(<)/html>`);
+        }
+    }
+    (<) dans le but d'éviter la confusion du site avec les balises html.
+</code></pre>
