@@ -4,8 +4,14 @@
     "description": "tp5 devweb",
     "main": "server-http.mjs",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "0NITE",
-    "license": "ISC"
-  }
+    "license": "ISC",
+    "dependencies": {
+        "cross-env": "^7.0.3"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
+    }
+}

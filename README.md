@@ -71,3 +71,8 @@
     }
     (<) dans le but d'éviter la confusion du site avec les balises html.
 </code></pre>
+
+<h3>Question 1.6 indiquer ce que cette commande a modifié dans votre projet.</h3>
+<pre><code>
+    Ces commandes ont ajouté deux packages dans le projet, l'un pour pouvoir démarrer le projet en mode production (cross-env) et l'autre pour pouvoir démarrer le projet en mode développement (nodemon) et a également rajouté le dossier node_modules dans le dossier DINAN_Olivier_CC3.
+</code></pre>
