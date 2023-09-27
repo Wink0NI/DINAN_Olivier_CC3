@@ -126,3 +126,25 @@ Les différences entre les scripts http-dev et http-prod dans le projet sont gé
     <p><B>Route "/" et "/index.html"</B> -> affiche le contenu de index.html.</p>
     <p><B>Route "/random/:nb"</B> ->  Extrait la valeur du paramètre nb de la requête, génère un nombre spécifié de balises li contenant des nombres aléatoires, puis renvoie ces balises dans une liste non ordonnée HTML.</p>
 </code></pre>
+
+<h3>Question 2.3 lister les en-têtes des réponses fournies par Express. Lesquelles sont nouvelles par rapport au serveur HTTP ?</h3>
+<pre><code>
+    # Accept-Ranges: bytes (Nouveau)
+    # Cache-Control: public, max-age=0 (Nouveau)
+    Connection: keep-alive
+    Content-Length: 725
+    Content-Type: text/html; charset=UTF-8
+    Date: Wed, 20 Sep 2023 11:39:56 GMT
+    # Etag: /"2d5-18ab163b441" (Nouveau)
+    Keep-Alive: timeout=5
+    # Last-Modified: Wed, 20 Sep 2023 07:00:16 GMT (Nouveau)
+    # X-Powered-By: Express (Nouveau)
+</code></pre>
+
+<code><pre>
+    <B>Accept-Ranges: bytes :</B> Cet en-tête indique que le serveur accepte des plages d'octets pour les téléchargements partielles.
+    <B>Cache-Control: public, max-age=0 :</B> Cet en-tête contrôle le comportement de mise en cache du contenu par les navigateurs, spécifiant qu'aucune mise en cache n'est autorisée (max-age=0) et que la réponse peut être mise en cache publiquement.
+    <B>Etag: /"2d5-18ab163b441" :</B> L'Etag est un identifiant unique généré par le serveur pour représenter la version actuelle de la ressource.
+    <B>Last-Modified: Wed, 20 Sep 2023 07:00:16 GMT :</B> Indique la date et l'heure à laquelle la ressource a été modifiée pour la dernière fois sur le serveur. 
+    <B>X-Powered-By: Express :</B> Cet en-tête indique que le serveur utilise le framework Express.js pour gérer les requêtes.
+</code></pre>
