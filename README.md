@@ -148,3 +148,8 @@ Les différences entre les scripts http-dev et http-prod dans le projet sont gé
     <B>Last-Modified: Wed, 20 Sep 2023 07:00:16 GMT :</B> Indique la date et l'heure à laquelle la ressource a été modifiée pour la dernière fois sur le serveur. 
     <B>X-Powered-By: Express :</B> Cet en-tête indique que le serveur utilise le framework Express.js pour gérer les requêtes.
 </code></pre>
+
+<h3>Question 2.4 quand l'événement listening est-il déclenché ?</h3>
+<pre><code>
+    <p>L'événement listening est déclenché lorsque le serveur Express commence à écouter sur le port spécifié et est prêt à recevoir des requêtes. <code>console.info(`File ${import.meta.url} executed.`);</code> sera éxécuté avant l'événement listening.</p>
+</code></pre>
