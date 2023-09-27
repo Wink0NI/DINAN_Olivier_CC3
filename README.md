@@ -21,3 +21,19 @@
     <B>Keep-Alive: timeout=5:</B> Cet en-tête indique la durée maximale pendant laquelle la connexion doit être maintenue ouverte (en secondes) en l'absence d'activité. Dans ce cas, la connexion sera fermée si aucune activité n'a lieu pendant 5 secondes.
     <B>Transfer-Encoding: chunked:</B> Cet en-tête indique que le corps de la réponse est encodé en morceaux (chunks). Cela signifie que le serveur enverra la réponse en plusieurs morceaux plutôt qu'en une seule pièce. Cela peut être utilisé pour les réponses de taille inconnue ou pour une diffusion progressive.
 </code></pre>
+
+<h3>Question 1.2 donner la liste des en-têtes qui ont changé depuis la version précédente.</h3>
+<pre><code>
+    Les en-têtes avec un fichier JSON:
+        Connection: keep-alive
+        # Content-Length: 20
+        # Content-Type: application/json
+        Date: Wed, 20 Sep 2023 06:27:18 GMT
+        Keep-Alive: timeout=5
+</code></pre>
+
+<pre><code>
+    Les en-têtes qui ont changé depuis la version précédente:
+        <B>Content-Length: 20 :</B>Un nouvel en-tête indiquant la longueur du contenu de la réponse en octets.
+        <B>Content-Type: application/json :</B>Un en-tête qui spécifie que le type de contenu de la réponse est au format JSON.
+</code></pre>
